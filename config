@@ -45,11 +45,14 @@ bindsym $mod+o exec qutebrowser
 bindsym $mod+shift+o exec firefox -private-window
 
 for_window [class=".*"] border pixel 4
+new_window pixel 4
+
 # pop ups floating
 for_window [window_role="pop-up"] floating enable
 for_window [class=None] floating enable
 for_window [class="Tk"] floating enable
 gaps inner 10
+gaps outer 5
 
 # file manager
 bindsym $mod+e exec dolphin
@@ -59,6 +62,7 @@ bindsym $mod+e exec dolphin
 floating_modifier $mod
 
 # start a terminal
+#bindsym $mod+Return exec st -t "Simple Terminal" -f "Source Code Pro:style=Semibold:size=12" -e tmux
 bindsym $mod+Return exec alacritty -e tmux
 bindsym $mod+shift+Return exec kitty
 
@@ -201,6 +205,8 @@ client.focused          $green $green $darkgray $purple $darkgray
 client.focused_inactive $green $darkgray $yellow $purple $darkgray
 client.unfocused        $green $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red
+client.placeholder      $green $darkgray $yellow $purple $darkgray
+client.background       $darkgray
 
 #end of window title bars & borders section
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
