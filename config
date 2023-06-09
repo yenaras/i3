@@ -1,7 +1,7 @@
 # vim: set ft=conf
 set $mod Mod4
 
-font pango:Hack Nerd Font 8
+font pango:IBM Plex Mono 12
 
 exec --no-startup-id dex --autostart --environment i3
 
