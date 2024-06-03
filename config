@@ -46,8 +46,8 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # browser
-bindsym $mod+o exec qutebrowser
-bindsym $mod+shift+o exec firefox -private-window
+bindsym $mod+o exec microsoft-edge-stable
+bindsym $mod+shift+o exec microsoft-edge-stable --inprivate
 
 for_window [class=".*"] border pixel 4
 new_window pixel 4
@@ -76,6 +76,7 @@ bindsym $mod+x kill
 
 # rofi app launcher
 bindsym $mod+d exec --no-startup-id "rofi -show drun -show-icons"
+bindsym $mod+z exec --no-startup-id "rofi -show drun -show-icons"
 
 # change focus
 bindsym $mod+h focus left
