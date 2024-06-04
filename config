@@ -60,7 +60,7 @@ gaps inner 10
 gaps outer 5
 
 # file manager
-bindsym $mod+e exec dolphin
+bindsym $mod+e exec thunar
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
